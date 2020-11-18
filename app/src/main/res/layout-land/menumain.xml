@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="mx.com.systemjorge.lostpetsdelrincon.Pantalla2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_uno"
+
+
+            android:onClick="Menu2"
+            android:text="Volver"
+            android:textColor="@drawable/btn_dos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/idImagen"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/idNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/rubik"
+            android:padding="24dp"
+            android:text="Esta Aplicación ha sido diseñada con el objetivo de brindar apoyo a los albergues de los Pueblos del Rincón, asi mismo apoyar a todas las personas que tengan mascotas extraviadas y asi puedan encontrarlas mucho mas rapido."
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/idImagen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idImagen"
+            app:layout_constraintTop_toTopOf="@+id/idImagen" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

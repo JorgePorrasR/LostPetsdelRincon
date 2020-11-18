@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorFondo"
+    tools:context="mx.com.systemjorge.lostpetsdelrincon.Pantalla2">
+
+    <RelativeLayout
+
+        android:layout_width="400dp"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/idImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="400dp"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/idNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:text="Esta Aplicación ha sido diseñada con el objetivo de brindar apoyo a los albergues de los Pueblos del Rincón, asi mismo apoyar a todas las personas que tengan mascotas extraviadas y asi puedan encontrarlas mucho mas rapido."
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_uno"
+        android:onClick="Menu2"
+
+
+        android:text="Volver"
+        android:textColor="@drawable/btn_dos" />
+
+
+
+</LinearLayout>
